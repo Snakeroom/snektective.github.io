@@ -1,0 +1,7 @@
+title: The Snake Room
+description: Documentation for `The Snakeroom Alliance`
+
+theme: jekyll-theme-cayman
+
+plugins:
+  - jekyll-github-metadata
