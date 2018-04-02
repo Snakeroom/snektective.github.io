@@ -3,8 +3,11 @@ body {
 	height: 100%;
 }
 
-.icon {
-  position: fixed; /* or absolute */
-  top: 50%;
-  left: 50%;
+.center-screen {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 100vh;
 }
