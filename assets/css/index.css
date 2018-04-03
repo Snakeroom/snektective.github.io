@@ -126,7 +126,11 @@ br.break {
 
 	.buttons.other .download-primary {
 		display: block;
-		margin-right: 5px;
+		margin: 5px 0;
 		width: 100%;
+	}
+
+	br.break {
+		margin: 7px 0;
 	}
 }
