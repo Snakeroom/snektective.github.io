@@ -45,6 +45,7 @@ div.mild-fade {
 	text-transform: uppercase;
 	cursor: pointer;
 	transition: background-color .2s;
+	box-sizing: border-box;
 }
 
 .download-primary:not(.disabled):hover {
@@ -114,4 +115,18 @@ a:hover {
 
 br.break {
 	margin: 20px 0;
+}
+
+@media (max-width: 600px) {
+	.buttons.chrome .download-primary#dl-chrome,
+	.buttons.firefox .download-primary#dl-firefox {
+		display: block;
+		margin: 5px 0;
+	}
+
+	.buttons.other .download-primary {
+		display: block;
+		margin-right: 5px;
+		width: 100%;
+	}
 }
