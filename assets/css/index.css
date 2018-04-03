@@ -5,6 +5,8 @@ body {
 	overflow-x: hidden;
 	font-family: sans-serif;
 	margin: 0;
+	padding: 0 5px;
+	box-sizing: border-box;
 }
 
 .center-screen {
@@ -126,7 +128,11 @@ br.break {
 
 	.buttons.other .download-primary {
 		display: block;
-		margin-right: 5px;
+		margin: 5px 0;
 		width: 100%;
+	}
+
+	br.break {
+		margin: 7px 0;
 	}
 }
