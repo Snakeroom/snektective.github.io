@@ -1,6 +1,8 @@
 body {
-	width: 100%,
+	width: 100%;
 	height: 100%;
+    background-color: #333;
+    overflow-x: hidden;
 }
 
 .center-screen {
@@ -14,4 +16,5 @@ body {
 
 abbr {
     text-decoration: none;
+    color: #FFF;
 }
