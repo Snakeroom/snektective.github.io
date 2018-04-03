@@ -6,7 +6,7 @@
     }
 
     window.dlChrome = function() {
-        var extUrl = "https://chrome.google.com/webstore/detail/sneknet/ejabfblfddjecbkhadpdhcabmjlaomdm";
+        var extUrl = "https://chrome.google.com/webstore/detail/ejabfblfddjecbkhadpdhcabmjlaomdm";
 
         if (window.chrome) {
             window.chrome.webstore.install(extUrl);
