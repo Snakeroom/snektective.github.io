@@ -15,7 +15,6 @@ body {
 	justify-content: center;
 	align-items: center;
 	text-align: center;
-	min-height: 100vh;
 	color: #fff;
 }
 
@@ -80,8 +79,6 @@ div.mild-fade {
 }
 
 .footer {
-	position: absolute;
-	bottom: 5px;
 	color: #555;
 	text-align: center;
 	width: 100%;
@@ -99,4 +96,9 @@ a:hover {
 
 br.break {
 	margin: 20px 0;
+}
+
+ul {
+	list-style: none;
+	padding: 0;
 }
