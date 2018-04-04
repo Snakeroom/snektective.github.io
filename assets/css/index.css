@@ -15,7 +15,6 @@ body {
 	justify-content: center;
 	align-items: center;
 	text-align: center;
-	min-height: 100vh;
 	color: #fff;
 }
 
@@ -38,8 +37,9 @@ div.mild-fade {
 }
 
 .download-primary {
-	display: none;
+	display: block;
 	padding: 10px 20px;
+	margin: 5px;
 	background: #fdfdfd;
 	color: #0074d9;
 	border-radius: 3px;
@@ -60,18 +60,10 @@ div.mild-fade {
 	opacity: 0.3;
 }
 
-.buttons.detected #waiting {
-	display: none;
-}
-
-.buttons.chrome .download-primary#dl-chrome,
-.buttons.firefox .download-primary#dl-firefox {
-	display: inline;
-}
-
-.buttons.other .download-primary {
-	display: inline;
-	margin-right: 5px;
+.buttons {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
 }
 
 .hidden {
@@ -86,20 +78,7 @@ div.mild-fade {
 	fill: #0074d9;
 }
 
-a.button-show-all {
-	cursor: pointer;
-	font-size: 11px;
-	color: #666;
-	margin-top: 20px;
-}
-
-a.button-show-all:hover {
-	color: #999;
-}
-
 .footer {
-	position: absolute;
-	bottom: 5px;
 	color: #555;
 	text-align: center;
 	width: 100%;
@@ -119,20 +98,7 @@ br.break {
 	margin: 20px 0;
 }
 
-@media (max-width: 600px) {
-	.buttons.chrome .download-primary#dl-chrome,
-	.buttons.firefox .download-primary#dl-firefox {
-		display: block;
-		margin: 5px 0;
-	}
-
-	.buttons.other .download-primary {
-		display: block;
-		margin: 5px 0;
-		width: 100%;
-	}
-
-	br.break {
-		margin: 7px 0;
-	}
+ul {
+	list-style: none;
+	padding: 0;
 }

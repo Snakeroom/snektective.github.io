@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Sneknet - Home</title>
+		<title>Sneknet - FAQ</title>
 
 		<link rel="icon" type="image/x-icon" href="./favicon.ico">
 		<link href="./assets/css/index.css" rel="stylesheet"/>
@@ -9,14 +9,12 @@
 		<meta name="description" content="🐍 Group up together and conquer the circles! 🐍"/>
 		<meta property="og:image" content="https://snektective.github.io/assets/img/snek.png"/>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-		<link rel="chrome-webstore-item" href="https://chrome.google.com/webstore/detail/ejabfblfddjecbkhadpdhcabmjlaomdm"/>
 	</head>
 	<body>
 		<div class="center-screen" id="egg">
 			<img src="./assets/img/snek.png">
 			<h4>sneknet</h4>
-			<p>an extension for growing circles automatically</p>
+			<p>frequently asked questions about sneknet</p>
 			<div class="mild-fade">
 				<a href="https://github.com/Snektective">github</a> /
 				<a href="https://discord.gg/BmDexHw">discord</a> /
@@ -24,19 +22,43 @@
 				<a href="https://twitter.com/snekroom">twitter</a>
 			</div>
 			<br class="break"/>
+			<h3>what is sneknet?</h3>
+			<p>
+				sneknet is a website that links to your reddit account to automatically join servers<br>
+				once connected, you do not need to do anything - you don't even need to be online<br>
+				the server handles it all for you
+			</p>
+			<h3>how?</h3>
+			<p>
+				we found some secret sauce with the reddit api
+			</p>
+			<h3>what the hell is this?</h3>
+			<img src="./assets/img/oauth.png">
+			<ul>
+				<li>
+					the votes are a part of the secret sauce, but not all of it<br>
+					if you want peace of mind, check your <a href="https://reddit.com/user/me/upvoted">upvoted posts</a>
+				</li>
+				<li>
+					we need your username to be able to search the database
+				</li>
+				<li>
+					sneknet will be online until circleoftrust goes offline<br>
+					you can remove access after the experiment
+				</li>
+			</ul>
+			<h3>what about the extension?</h3>
+			<p>
+				the extension is now redundant<br>
+				please sign up for the new service using the button below
+			</p>
+			<br class="break"/>
 			<div class="buttons">
-				<p id="waiting">detecting your browser...</p>
-				<a class="download-primary" id="dl-chrome" onclick="window.dlChrome()">
-					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path d="M640 352c0 70.692-57.308 128-128 128H144C64.471 480 0 415.529 0 336c0-62.773 40.171-116.155 96.204-135.867A163.68 163.68 0 0 1 96 192c0-88.366 71.634-160 160-160 59.288 0 111.042 32.248 138.684 80.159C409.935 101.954 428.271 96 448 96c53.019 0 96 42.981 96 96 0 12.184-2.275 23.836-6.415 34.56C596.017 238.414 640 290.07 640 352zm-246.627-64H328V176c0-8.837-7.164-16-16-16h-48c-8.836 0-16 7.163-16 16v112h-65.373c-14.254 0-21.393 17.234-11.314 27.314l105.373 105.373c6.248 6.248 16.379 6.248 22.627 0l105.373-105.373c10.08-10.08 2.941-27.314-11.313-27.314z"/></svg>
-					Download for Chrome
-				</a>
-				<a class="download-primary" id="dl-firefox" onclick="window.dlFirefox()">
-					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path d="M640 352c0 70.692-57.308 128-128 128H144C64.471 480 0 415.529 0 336c0-62.773 40.171-116.155 96.204-135.867A163.68 163.68 0 0 1 96 192c0-88.366 71.634-160 160-160 59.288 0 111.042 32.248 138.684 80.159C409.935 101.954 428.271 96 448 96c53.019 0 96 42.981 96 96 0 12.184-2.275 23.836-6.415 34.56C596.017 238.414 640 290.07 640 352zm-246.627-64H328V176c0-8.837-7.164-16-16-16h-48c-8.836 0-16 7.163-16 16v112h-65.373c-14.254 0-21.393 17.234-11.314 27.314l105.373 105.373c6.248 6.248 16.379 6.248 22.627 0l105.373-105.373c10.08-10.08 2.941-27.314-11.313-27.314z"/></svg>
-					Download for Firefox
+				<a class="download-primary" href="https://sneknet.com/">
+					Back to sneknet
 				</a>
 			</div>
-			<br/>
-			<a class="button-show-all" onclick="window.showAll()">show all downloads</a>
+			<br class="break"/>
 		</div>
 		<div class="footer">
 			<div>
