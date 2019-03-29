@@ -15,12 +15,12 @@ main {
 }
 
 header {
-	color: #555;
+	color: #bbb;
 	text-align: center;
 }
 
 article {
-	color: #999;
+	color: #bbb;
 	text-align: center;
 	flex-grow: 1;
 }
