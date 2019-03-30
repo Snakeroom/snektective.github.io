@@ -1,0 +1,29 @@
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #222;
+  font-family: sans-serif;
+  color: #999;
+}
+
+.main {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+  box-sizing: border-box
+}
+
+.contents {
+  flex-grow: 1;
+}
+
+a {
+	text-decoration: none;
+  color: inherit;
+  color: #555;
+}
+
+a:hover {
+	color: #999;
+}

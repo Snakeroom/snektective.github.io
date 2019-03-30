@@ -1,0 +1,17 @@
+.header {
+  text-align: center;
+}
+
+.name {
+  color: #777;
+  &:hover {
+    color: unset;
+  }
+}
+
+.links {
+  a {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+}
