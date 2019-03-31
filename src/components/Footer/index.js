@@ -53,7 +53,7 @@ class Footer extends Component {
               {
                 users
                   .filter(user => user.category === category.id)
-                  .map(user => <a key={user.reddit} href={`https://reddit.com/u/${user.reddit}`}>/u/{user.reddit}</a>)
+                  .map(user => <a key={user.reddit} href={`https://reddit.com/u/${user.reddit}`}>{`/u/${user.reddit}`}</a>)
               }
             </div>
           </p>
