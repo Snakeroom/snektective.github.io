@@ -4,10 +4,10 @@ import styles from './index.module.scss';
 const categories = [
   {
     id: 'site',
-    content: 'site written by:'
+    content: 'site written by'
   }, {
     id: 'contributors',
-    content: 'contributors:'
+    content: 'contributors'
   }, {
     id: 'logo',
     content: 'sneknet icon courtesy of'
