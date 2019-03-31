@@ -10,6 +10,10 @@
 }
 
 .links {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
   a {
     margin-left: 5px;
     margin-right: 5px;

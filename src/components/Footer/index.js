@@ -34,6 +34,9 @@ const users = [
     reddit: 'thesbros',
     category: 'contributors'
   },{
+    reddit: 'goz3rr',
+    category: 'contributors'
+  },{
     reddit: 'cubity_first',
     category: 'contributors'
   },{
