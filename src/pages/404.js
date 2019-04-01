@@ -1,8 +1,8 @@
-import React, { Component } from 'react';
-import Layout from '../components/Layout';
-import Container from '../components/Container';
-import { Helmet } from 'react-helmet';
-import { Link } from 'gatsby';
+import React, { Component } from 'react'
+import Layout from '../components/Layout'
+import Container from '../components/Container'
+import { Helmet } from 'react-helmet'
+import { Link } from 'gatsby'
 
 class NotFoundPage extends Component {
   render() {
@@ -21,4 +21,4 @@ class NotFoundPage extends Component {
   }
 }
 
-export default NotFoundPage;
+export default NotFoundPage
