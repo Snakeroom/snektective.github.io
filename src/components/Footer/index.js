@@ -32,6 +32,11 @@ const users = [
     category: 'site',
   },
   {
+    reddit: 'BrandonDyer64',
+    github: 'BrandonDyer64',
+    category: 'site',
+  },
+  {
     reddit: 'taxborn',
     github: 'taxborn',
     category: 'contributors',
