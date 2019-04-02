@@ -11,7 +11,7 @@ body {
   display: flex;
   flex-direction: column;
   padding: 1em;
-  box-sizing: border-box
+  box-sizing: border-box;
 }
 
 .contents {
@@ -19,11 +19,12 @@ body {
 }
 
 a {
-	text-decoration: none;
+  text-decoration: none;
   color: inherit;
-  color: #555;
+  color: #777;
+  font-size: 1.1em;
 }
 
 a:hover {
-	color: #999;
+  color: #999;
 }
