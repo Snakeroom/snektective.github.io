@@ -31,6 +31,9 @@ class Header extends Component {
           <a href="https://discord.gg/sfe" target="_blank">
             sfe
           </a>
+          <a href="https://discord.gg/QSd2ydQ" target="_blank">
+            cckufi
+          </a>
           <a href="https://discord.gg/3rcujhh" target="_blank">
             sequence narrators
           </a>
@@ -44,7 +47,7 @@ class Header extends Component {
                 style={{ height: '1em', marginBottom: '-2px' }}
               />
               <span className={styles.tooltiptext}>
-                Sneknet is a browser etension that allows you to use your votes
+                Sneknet is a browser extension that allows you to use your votes
                 to support story-telling collaboration from our Reddit
                 communities.
               </span>
