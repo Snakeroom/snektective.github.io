@@ -34,7 +34,7 @@ class Header extends Component {
             sequence narrators
           </a>
           <a href="https://www.reddit.com/r/sequence" target="_blank">
-            sequence subreddit
+            r/sequence
           </a>
         </div>
         <div className={styles.installButtons}>
