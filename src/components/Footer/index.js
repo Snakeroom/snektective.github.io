@@ -1,39 +1,30 @@
 import React, { Component } from 'react'
 import styles from './index.module.scss'
 
-const categories = [
-  {
-    id: 'site',
-    content: 'site written by',
-  },
-  {
-    id: 'contributors',
-    content: 'contributors',
-  },
-  {
-    id: 'logo',
-    content: 'sneknet icon courtesy of',
-  },
-]
+const categories = {
+  id: 'website',
+  contributors: 'general contributions',
+  logo: 'sneknet logo',
+}
 const users = [
-  {
-    reddit: '__-_------___---',
-    github: '9hp',
-    category: 'site',
-  },
   {
     reddit: 'offbeatwitch',
     github: 'hedgehog1029',
     category: 'site',
   },
   {
-    reddit: '7coil',
-    github: '7coil',
+    reddit: 'BrandonDyer64',
+    github: 'BrandonDyer64',
     category: 'site',
   },
   {
-    reddit: 'BrandonDyer64',
-    github: 'BrandonDyer64',
+    reddit: '__-_------___---',
+    github: '9hp',
+    category: 'site',
+  },
+  {
+    reddit: '7coil',
+    github: '7coil',
     category: 'site',
   },
   {
@@ -54,11 +45,6 @@ const users = [
   {
     reddit: 'goz3rr',
     github: 'goz3rr',
-    category: 'contributors',
-  },
-  {
-    reddit: 'cubity_first',
-    github: 'CubityCube',
     category: 'contributors',
   },
   {
@@ -104,50 +90,26 @@ class Footer extends Component {
     const { mode } = this.state
     return (
       <footer className={styles.footer}>
-        {categories
-          .filter(
-            (
-              category // Filter out categories that have no users in it
-            ) =>
-              users
-                .filter(user => user.category === category.id)
-                .filter(user => user[mode]).length > 0
-          )
-          .map(category => (
-            <p key={category.id}>
-              {category.content}
-              <br />
-              <span className={styles.links}>
-                {users
-                  .filter(user => user.category === category.id)
-                  .filter(user => user[mode])
-                  .map(user => {
-                    const username = user[mode]
-
-                    if (mode === 'reddit')
-                      return (
-                        <a
-                          key={username}
-                          href={`https://reddit.com/u/${username}`}
-                        >{`/u/${username}`}</a>
-                      )
-
-                    if (mode === 'github')
-                      return (
-                        <a
-                          key={username}
-                          href={`https://github.com/${username}`}
-                        >
-                          {username}
-                        </a>
-                      )
-
-                    // Return the username if unknown mode
-                    return <span>{username}</span>
-                  })}
-              </span>
-            </p>
-          ))}
+        <p>
+          contributors
+          <br />
+          <span className={styles.links}>
+            {users.map(user => {
+              const username = user[mode]
+              const url =
+                mode === 'reddit'
+                  ? `https://reddit.com/u/${username}`
+                  : `https://github.com/${username}`
+              const prefix = mode === 'reddit' ? 'u/' : ''
+              return (
+                <a key={username} href={url} title={categories[user.category]}>
+                  {prefix}
+                  {username}
+                </a>
+              )
+            })}
+          </span>
+        </p>
       </footer>
     )
   }
