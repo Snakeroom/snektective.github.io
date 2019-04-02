@@ -33,6 +33,9 @@ class Header extends Component {
           <a href="https://discord.gg/3rcujhh" target="_blank">
             sequence narrators
           </a>
+          <a href="https://www.reddit.com/r/sequence" target="_blank">
+            sequence subreddit
+          </a>
         </div>
         <div className={styles.installButtons}>
           <h2>Install Sneknet</h2>
