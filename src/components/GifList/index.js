@@ -27,8 +27,7 @@ class GifList extends Component {
           <Gif
             key={key++}
             src={target.extra.url}
-            chapter={target.chapter}
-            scene={target.scene}
+            fullname={target.fullname}
           />
         )
       })

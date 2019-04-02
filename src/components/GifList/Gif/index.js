@@ -5,9 +5,7 @@ export default props => {
   return (
     <div className={styles.gif}>
       <a
-        href={`https://www.reddit.com/sequence/scene?chapter=${
-          props.chapter
-        }&scene=${props.scene}`}
+        href={`https://www.reddit.com/sequence/?link=${props.fullname.replace("t3_", "")}`}
       >
         <img src={props.src} />
       </a>
