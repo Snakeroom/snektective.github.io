@@ -1,17 +1,49 @@
 import React, { Component } from 'react'
 import Gif from './Gif'
+import { getData } from './getData'
 import styles from './index.module.scss'
 
 class GifList extends Component {
+  constructor(props) {
+    super(props)
+    this.state = {}
+  }
+
+  componentDidMount() {
+    // Start pinging server
+    this.interval = setInterval(() => {
+      this.update()
+    }, 5000)
+    this.update()
+  }
+
+  update() {
+    // Post to backend
+    getData().then(data => {
+      // Add gifs to state
+      let key = 0
+      const gifs = data.targets.map(target => {
+        return (
+          <Gif
+            key={key++}
+            src={target.extra.url}
+            chapter={target.chapter}
+            scene={target.scene}
+          />
+        )
+      })
+      this.setState({ gifs })
+    })
+  }
+
+  componentWillUnmount() {
+    super.componentWillUnmount()
+    // Stop pinging server
+    clearInterval(this.interval)
+  }
+
   render() {
-    return (
-      <div className={styles.giflist}>
-        <Gif src="https://proxy.duckduckgo.com/iu/?u=https%3A%2F%2Fi.pinimg.com%2F736x%2F6f%2F10%2Ff6%2F6f10f618b21ac4ceae614259ce789065--ball-python-terrarium-cute-snakes.jpg&f=1" />
-        <Gif src="https://proxy.duckduckgo.com/iu/?u=https%3A%2F%2Fi.pinimg.com%2F736x%2F6f%2F10%2Ff6%2F6f10f618b21ac4ceae614259ce789065--ball-python-terrarium-cute-snakes.jpg&f=1" />
-        <Gif src="https://proxy.duckduckgo.com/iu/?u=https%3A%2F%2Fi.pinimg.com%2F736x%2F6f%2F10%2Ff6%2F6f10f618b21ac4ceae614259ce789065--ball-python-terrarium-cute-snakes.jpg&f=1" />
-        <Gif src="https://proxy.duckduckgo.com/iu/?u=https%3A%2F%2Fi.pinimg.com%2F736x%2F6f%2F10%2Ff6%2F6f10f618b21ac4ceae614259ce789065--ball-python-terrarium-cute-snakes.jpg&f=1" />
-      </div>
-    )
+    return <div className={styles.giflist}>{this.state.gifs}</div>
   }
 }
 
