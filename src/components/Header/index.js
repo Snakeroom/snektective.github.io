@@ -25,6 +25,9 @@ class Header extends Component {
           <a href="https://discord.gg/yq9QV2A" target="_blank">
             discord
           </a>
+          <a href="https://www.reddit.com/r/sequence" target="_blank">
+            r/sequence
+          </a>
         </div>
         <div className={styles.installButtons}>
           <h2>
