@@ -4,6 +4,7 @@ import { Link } from 'gatsby'
 import { Helmet } from 'react-helmet'
 
 import snekImage from './snek.png'
+import question from './question.png'
 
 class Header extends Component {
   render() {
@@ -35,7 +36,20 @@ class Header extends Component {
           </a>
         </div>
         <div className={styles.installButtons}>
-          <h2>Install Sneknet</h2>
+          <h2>
+            Install Sneknet&nbsp;
+            <span className={styles.tooltip}>
+              <img
+                src={question}
+                style={{ height: '1em', marginBottom: '-2px' }}
+              />
+              <span className={styles.tooltiptext}>
+                Sneknet is a browser etension that allows you to use your votes
+                to support story-telling collaboration from our Reddit
+                communities.
+              </span>
+            </span>
+          </h2>
           <span className={styles.buttons}>
             <a
               href="https://addons.mozilla.org/en-US/firefox/addon/snek/"
