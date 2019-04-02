@@ -24,11 +24,7 @@ class GifList extends Component {
       let key = 0
       const gifs = data.targets.map(target => {
         return (
-          <Gif
-            key={key++}
-            src={target.extra.url}
-            fullname={target.fullname}
-          />
+          <Gif key={key++} src={target.extra.url} fullname={target.fullname} />
         )
       })
       this.setState({ gifs })
@@ -36,13 +32,17 @@ class GifList extends Component {
   }
 
   componentWillUnmount() {
-    super.componentWillUnmount()
     // Stop pinging server
     clearInterval(this.interval)
   }
 
   render() {
-    return <div className={styles.giflist}>{this.state.gifs}</div>
+    return (
+      <>
+        <h2>Our Gifs</h2>
+        <div className={styles.giflist}>{this.state.gifs}</div>
+      </>
+    )
   }
 }
 

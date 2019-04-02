@@ -23,19 +23,7 @@ class Header extends Component {
             github
           </a>
           <a href="https://discord.gg/yq9QV2A" target="_blank">
-            snakeroom
-          </a>
-          <a href="https://discord.gg/f9xaeJG" target="_blank">
-            april knights
-          </a>
-          <a href="https://discord.gg/sfe" target="_blank">
-            sfe
-          </a>
-          <a href="https://discord.gg/QSd2ydQ" target="_blank">
-            cckufi
-          </a>
-          <a href="https://discord.gg/3rcujhh" target="_blank">
-            sequence narrators
+            discord
           </a>
         </div>
         <div className={styles.installButtons}>

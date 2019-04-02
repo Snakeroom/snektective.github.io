@@ -1,0 +1,35 @@
+.discords {
+  display: flex;
+  flex-direction: row;
+  max-width: 1200px;
+  flex-wrap: wrap;
+  .discord {
+    margin: 10px;
+    background-color: #444;
+    padding: 12px 14px;
+    border-radius: 8px;
+    display: flex;
+    align-items: flex-start;
+    img {
+      width: 64px;
+      height: 64px;
+      background-color: #333;
+      border-radius: 15px;
+    }
+    span {
+      margin: 10px;
+    }
+    a {
+      padding: 10px 15px;
+      color: #222;
+      background-color: #999;
+      border-radius: 5px;
+      font-weight: bold;
+      border-bottom: 3px solid #777;
+      transition: 0.1s linear;
+      &:hover {
+        background-color: #888;
+      }
+    }
+  }
+}
