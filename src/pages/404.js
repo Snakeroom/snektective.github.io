@@ -14,7 +14,7 @@ class NotFoundPage extends Component {
         <Container>
           <h1>404</h1>
           <h2>Not found!</h2>
-          <Link to="/">Go home, you're drunk</Link>
+          <Link to="/">Go home, you&apos;re drunk</Link>
         </Container>
       </Layout>
     )
