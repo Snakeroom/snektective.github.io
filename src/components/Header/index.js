@@ -19,12 +19,10 @@ class Header extends Component {
         </Link>
         <div className={styles.links}>
           <a href="https://github.com/Snektective">github</a>
-          <a href="https://discord.gg/BmDexHw">discord</a>
-          <a href="https://www.reddit.com/r/snakeroomalliance/">
-            /r/snakeroomalliance
-          </a>
-          <a href="https://www.reddit.com/r/sequence_meta/">/r/sequence_meta</a>
-          <a href="https://twitter.com/snekroom">twitter</a>
+          <a href="https://discord.gg/yq9QV2A">snakeroom</a>
+          <a href="https://discord.gg/f9xaeJG">april knights</a>
+          <a href="https://discord.gg/sfe">sfe</a>
+          <a href="https://discord.gg/3rcujhh">sequence narrators</a>
         </div>
       </header>
     )
