@@ -26,36 +26,6 @@ class Header extends Component {
             discord
           </a>
         </div>
-        <div className={styles.installButtons}>
-          <h2>
-            Install Sneknet&nbsp;
-            <span className={styles.tooltip}>
-              <img
-                src={question}
-                style={{ height: '1em', marginBottom: '-2px' }}
-              />
-              <span className={styles.tooltiptext}>
-                Sneknet is a browser extension that allows you to use your votes
-                to support story-telling collaboration from our Reddit
-                communities.
-              </span>
-            </span>
-          </h2>
-          <span className={styles.buttons}>
-            <a
-              href="https://addons.mozilla.org/en-US/firefox/addon/snek/"
-              target="_blank"
-            >
-              Firefox
-            </a>
-            <a
-              href="https://chrome.google.com/webstore/detail/snek/cdajbijppfenmcmgnhekghefilinkfnm"
-              target="_blank"
-            >
-              Chrome
-            </a>
-          </span>
-        </div>
       </header>
     )
   }

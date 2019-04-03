@@ -10,8 +10,8 @@ class IndexPage extends Component {
     return (
       <Layout>
         <Container>
-          <DiscordList />
-          <GifList />
+          <h1>Until next time.</h1>
+          <img src="https://media0.giphy.com/media/sWedUFPt2zrgc/giphy.gif" />
         </Container>
       </Layout>
     )
