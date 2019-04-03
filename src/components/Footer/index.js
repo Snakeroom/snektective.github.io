@@ -56,7 +56,7 @@ const users = [
     reddit: 'cubity_first',
     github: 'CubityFirst',
     category: 'contributors',
-  },
+  }
 ]
 
 class Footer extends Component {
