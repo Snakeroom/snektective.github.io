@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import styles from './index.module.scss'
 
 const categories = {
-  id: 'website',
+  site: 'website',
   contributors: 'general contributions',
   logo: 'sneknet logo',
 }
@@ -70,14 +70,14 @@ class Footer extends Component {
     }
   }
   onPress(event) {
-    if (event.keyCode === 17) {
+    if (event.keyCode === 27) {
       this.setState({
         mode: 'github',
       })
     }
   }
   onRelease(event) {
-    if (event.keyCode === 17) {
+    if (event.keyCode === 27) {
       this.setState({
         mode: 'reddit',
       })
@@ -106,10 +106,11 @@ class Footer extends Component {
                   ? `https://reddit.com/u/${username}`
                   : `https://github.com/${username}`
               const prefix = mode === 'reddit' ? 'u/' : ''
+
+              // Use string concatination or else gatsby adds a comment inbetween
               return (
                 <a key={username} href={url} title={categories[user.category]}>
-                  {prefix}
-                  {username}
+                  {`${prefix}${username}`}
                 </a>
               )
             })}
