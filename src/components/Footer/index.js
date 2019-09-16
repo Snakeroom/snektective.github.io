@@ -51,11 +51,6 @@ const users = [
     reddit: 'Hexbugman213',
     github: null,
     category: 'logo',
-  },
-  {
-    reddit: 'cubity_first',
-    github: 'CubityFirst',
-    category: 'contributors',
   }
 ]
 
